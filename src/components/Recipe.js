@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from "prop-types";
+import './Recipe.css';
 
 class Recipe extends Component {
 
@@ -14,12 +15,9 @@ class Recipe extends Component {
 
     render() {
         return (
-            <section>
-                <li onClick={this.selectRecipe}
-                    className={`${this.props.selectedRecipe ? 'bold' : null}`}>
+                <li onClick={this.selectRecipe} className="clickable">
                     Item {this.props.recipe.id}
                 </li>
-            </section>
         );
     }
 }

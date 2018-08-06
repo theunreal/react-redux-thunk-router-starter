@@ -1,5 +1,6 @@
 App skeleton using best practices in React, including:
 
+* [React-Redux](https://github.com/reduxjs/react-redux)
 * [Redux](https://github.com/reduxjs/react-redux)
 * [Redux Thunk](https://github.com/reduxjs/redux-thunk)
 * [Connected React Router](https://github.com/supasate/connected-react-router)
@@ -14,5 +15,6 @@ This project includes usage / example:
 * Router navigation and accessing router parameters
 
 TODO:
-* Integrate with Material-UI
+* [done](https://i.imgur.com/uF5FKTk.png) Support Scss
+* [done](https://i.imgur.com/uF5FKTk.png) Integrate with Material-UI
 * Use TypeScript

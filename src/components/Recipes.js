@@ -3,14 +3,16 @@ import PropTypes from 'prop-types';
 import {recipesFetchData, recipesSelectRecipe} from "../actions/recipes";
 import {connect} from "react-redux";
 import Recipe from "./Recipe";
+import List from "@material-ui/core/List/List";
+import ListItem from "@material-ui/core/ListItem/ListItem";
 
 
 class Recipes extends Component {
 
     CACHE_TIME = 600000; // 10 minutes
 
-    constructor() {
-        super();
+    constructor(props) {
+        super(props);
         this.selectRecipe = this.selectRecipe.bind(this);
     }
 
@@ -37,14 +39,14 @@ class Recipes extends Component {
         }
 
         return (
-            <section>
+            <List component="nav">
                     {this.props.recipes.map((item) => (
-                        <ul key={item.id}>
+                        <ListItem button key={item.id}>
                                 <Recipe recipe={item}
                                         selectRecipe={this.selectRecipe}></Recipe>
-                        </ul>
+                        </ListItem>
                     ))}
-            </section>
+            </List>
         );
     }
 }
