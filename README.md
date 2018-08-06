@@ -1,3 +1,5 @@
+#React-Redux-Thunk-Router-Material-SCSS Starter
+
 App skeleton using best practices in React, including:
 
 * [React-Redux](https://github.com/reduxjs/react-redux)
@@ -14,7 +16,7 @@ This project includes usage / example:
 * Caching data received from an API for configurable time
 * Router navigation and accessing router parameters
 
-TODO:
-* [done](https://i.imgur.com/uF5FKTk.png) Support Scss
-* [done](https://i.imgur.com/uF5FKTk.png) Integrate with Material-UI
+### TODO:
+* ![done](https://i.imgur.com/uF5FKTk.png) Support Scss
+* ![done](https://i.imgur.com/uF5FKTk.png) Integrate with Material-UI
 * Use TypeScript
